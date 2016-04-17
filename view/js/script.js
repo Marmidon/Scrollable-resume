@@ -1,6 +1,6 @@
 $(document).ready(function()
 {	
-    $('.jumbotron').css({ height: ($(window).height()) +'px' })
+    $('.jumbotron').css({ height: ($(window).height()-50) +'px' })
 	responsiveResize();
     console.log("ready");
     $('.subMenu').smint({
@@ -11,17 +11,7 @@ $(document).ready(function()
 function responsiveResize () {
     $(window).on('resize', function() 
 	{  
-		$('.jumbotron').css({ height: ($(window).height()) +'px' });
-	}); 
-}
-
-function applyResize()
-{
-	$(window).on('resize', function() 
-	{  
-		lnStickyNavigation = $('.scroll-down').offset().top + 20;
-	
-		$('.jumbotron').css({ height: ($(window).height()) +'px' });
+		$('.jumbotron').css({ height: ($(window).height()-50) +'px' });
 	}); 
 }
 
