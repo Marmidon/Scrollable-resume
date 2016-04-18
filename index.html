@@ -19,6 +19,7 @@
         <title>Nikita Stenko - Front-End Developer</title>
         
         <!-- Bootstrap -->
+        <link href='https://fonts.googleapis.com/css?family=Calligraffitti' rel='stylesheet' type='text/css'>
         <link href="view/css/bootstrap.min.css" rel="stylesheet" />
 		<link href="view/style.css" rel="stylesheet" />
         
@@ -29,31 +30,72 @@
         
     </head>
     <body data-spy="scroll" data-target="#navbar-example">
-        <div id="top" class="jumbotron section sTop" data-src="/view/images/metro_animation.gif" data-position="center right">
+        <div id="top" class="jumbotron section sTop">
 			<div class="container">
 				<h1>Nikita Stenko</h1>
 				<p class="lead">Scrollable Resume</p>
 			</div>
 			
 			<div class="overlay"></div>
+            
 			<!--
 			<a href="#profile" class="scroll-down">	
 				<span class="glyphicon glyphicon-chevron-down"></span>
 			</a>
-!-->
+            !-->
             
 		</div>
         
-        <div class="subMenu" >
-	 	<div class="inner">
-	 		<a href="#sTop" class="subNavBtn">Home</a>
-	 		<a href="#s1" class="subNavBtn">Section 1</a> 
-			<a href="#s2" class="subNavBtn">Section 2</a>
-			<a href="#s3" class="subNavBtn">Section 3</a>
-			<a href="https://twitter.com/rabmyself" class="subNavBtn extLink end">External Link</a>
-		</div>
-	</div>
-        
+        <!-- Navigation panel
+        <nav class="navbar">
+            <div class="navbar-header">
+                <div class="subMenu" >
+                    <div class="inner">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                            <span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="myNavbar">
+                            <ul class="nav navbar-nav">
+                                <li><a href="#sTop" class="subNavBtn">Home</a></li>
+                            <li><a href="#s1" class="subNavBtn">Section 1</a> </li>
+                            <li><a href="#s2" class="subNavBtn">Section 2</a></li>
+                            <li><a href="#s3" class="subNavBtn">Section 3</a></li>
+                            <li><a href="https://twitter.com/rabmyself" class="subNavBtn extLink end">External Link</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div> 
+                
+            </div>
+        </nav>
+        -->
+       <div class="subMenu" id="elem">
+        <nav class="navbar navbar-default" id="navbar-example" role="navigation">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" onclick="toggleNavigation()" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+
+
+			<div class="collapse navbar-collapse navbar-ex1-collapse" >
+                
+				<ul class="nav navbar-nav" id="collapsedNavbar">
+					<li><a href="#sTop">Profile</a></li>
+					<li><a href="#s1">Experiences</a></li>
+					<li><a href="#s2">Abilities</a></li>
+				    <li><a href="#s3">Projects</a></li>
+				</ul>
+			</div>
+            
+		</nav>
+     </div>
         <div class="section s1">
 		<div class="inner ">
 			<h1>Section 1</h1>
@@ -71,6 +113,12 @@
 
 
 	<div class="section s3">
+		<div class="inner">
+			<h1>Section 3</h1>
+		</div>
+	</div>
+        
+        <div class="section s4">
 		<div class="inner">
 			<h1>Section 3</h1>
 		</div>

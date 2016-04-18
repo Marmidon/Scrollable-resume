@@ -93,7 +93,7 @@ If you like Smint, or have suggestions on how it could be improved, send me a tw
 				// Check if the position is inside then change the menu
 				// Courtesy of Ryan Clarke (@clarkieryan)
 				if(optionLocs[index][0] <= scrollTop && scrollTop <= optionLocs[index][1]){	
-					if(direction == "up"){
+					if(direction == "up" && optionLocs[index+1]!=undefined){
 						$("#"+id).addClass("active");
 						$("#"+optionLocs[index+1][2]).removeClass("active");
 					} else if(index > 0) {
