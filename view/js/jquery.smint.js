@@ -94,18 +94,18 @@ If you like Smint, or have suggestions on how it could be improved, send me a tw
 				// Courtesy of Ryan Clarke (@clarkieryan)
 				if(optionLocs[index][0] <= scrollTop && scrollTop <= optionLocs[index][1]){	
 					if(direction == "up" && optionLocs[index+1]!=undefined){
-						$("#"+id).addClass("active");
-						$("#"+optionLocs[index+1][2]).removeClass("active");
+						$("#"+id).addClass("active1");
+						$("#"+optionLocs[index+1][2]).removeClass("active1");
 					} else if(index > 0) {
-						$("#"+id).addClass("active");
-						$("#"+optionLocs[index-1][2]).removeClass("active");
+						$("#"+id).addClass("active1");
+						$("#"+optionLocs[index-1][2]).removeClass("active1");
 					} else if(direction == undefined){
-						$("#"+id).addClass("active");
+						$("#"+id).addClass("active1");
 					}
 					$.each(optionLocs, function(i){
 						if(id != optionLocs[i][2]){
 							
-							$("#"+optionLocs[i][2]).removeClass("active");
+							$("#"+optionLocs[i][2]).removeClass("active1");
 						}
 					});
 				}
@@ -131,10 +131,10 @@ If you like Smint, or have suggestions on how it could be improved, send me a tw
 
 				if($(window).scrollTop() + $(window).height() == $(document).height()) {
 	       			smintA.removeClass('active')
-	       			$(".smint a:not('.extLink'):last").addClass('active')
+	       			$(".smint a:not('.extLink'):last").addClass('active1')
 	       			
    				} else {
-   					smintA.last().removeClass('active')
+   					smintA.last().removeClass('active1')
    				}
 			});
 
