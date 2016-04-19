@@ -1,9 +1,9 @@
 html, body { color: #434242; font-family: 'Open Sans', sans-serif !important; height: 100%;}
 body { background: #F3EFE0; font-size: 15px; line-height: 1.64; overflow-x: hidden;}
 
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, strong, b { font-family: 'Open Sans', sans-serif; margin-bottom: 20px; }
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, strong, b {  margin-bottom: 20px; }
 h1,h4 { font-weight: 700; margin-bottom: 10px; text-decoration-color: #FFCC99; font-family: 'Calligraffitti', cursive;}
-h2,h3 { font-weight: 300; color: #22A39F; }
+h2,h3 { font-weight: 300; color: black; } /*#22A39F*/
 h2 { font-size: 54px; text-align: center; }
 h3 { font-size: 28px; }
 
@@ -11,7 +11,9 @@ h3 { font-size: 28px; }
     font-family: 'Calligraffitti', cursive;
 }
 
-
+.myImage {
+    margin-bottom: 50px;
+}
 p.statement {
     text-align: center;
     color: cadetblue;
@@ -22,16 +24,16 @@ p.statement {
 .navbar-header {
     width: 100%;
 }
-.active1 {
-    background-color: #3366CC !important;
+.active {
+    background-color: #3399FF !important;
 }
-.navbar {background-color: blue;}
+.navbar {background-color: #22A39F;}
 .navbar-default .navbar-nav>li>a {
-    background: #3399FF;
-    color:white;
+    color:white !important;
+    font-size: 20px !important;
 }
 .navbar-default .navbar-nav>.active>a {
-   background-color: #3399FF;
+   background-color: #22A39F;
     color:white;
 }
 .navbar-default .navbar-nav>.active>a :hover {
@@ -95,8 +97,7 @@ p.statement {
     text-decoration: none !important;
 }
 .section {
-	width: 100%;
-	height: 500px;
+	height: auto;
 }
 
 .subMenu .inner {
