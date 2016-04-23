@@ -25,23 +25,23 @@ p.statement {
     width: 100%;
 }
 .active {
-    background-color: #3399FF !important;
+    background-color: #3366CC !important;
 }
-.navbar {background-color: #22A39F;}
+.navbar {background-color: #3399FF;}
 .navbar-default .navbar-nav>li>a {
     color:white !important;
     font-size: 20px !important;
 }
 .navbar-default .navbar-nav>.active>a {
-   background-color: #22A39F;
+   background-color: #3399FF;
     color:white;
 }
 .navbar-default .navbar-nav>.active>a :hover {
-   background-color: #3399FF !important;
+   background-color: #3366CF !important;
     color:white;
 }
 .navbar-default .navbar-nav>li>a :hover {
-	background: #3399FF !important;
+	background: #3366CF !important;
 }
 .inner {
 	width: 960px;
